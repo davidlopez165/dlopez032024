@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas Drawing</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        margin-top: 50px;
+      }
+      h1 {
+        text-align: center;
+      }
+      #canvas {
+        margin: auto;
+        display: block;
+        border: 1px solid silver;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Canvas Drawing</h1>
+    <canvas id="canvas" width="1000px" height="500px"></canvas>
+
+    <script>
+      // Create variables
+      const canvas = window.document.querySelector('#canvas');
+      const ctx = canvas.getContext('2d');
+
+      canvas.style.backgroundColor = 'teal';
+
+      canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        ctx.fillStyle = '#FFFFFF';
+        ctx.arc(945, 690, 200, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.stroke(); 
+
+        ctx.fillStyle = '#FFFFFF';
+        ctx.arc(945, 400, 150, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.stroke(); 
+
+        ctx.strokeStyle = "orange";
+        ctx.lineWidth = 10;
+        ctx.lineCap = 'round'
+
+        ctx.beginPath();
+        ctx.moveTo(900, 400) 
+        ctx.lineTo( 700, 450);
+        ctx.lineTo( 900, 450 );
+        ctx.closePath(); 
+        ctx.stroke();
+
+        ctx.strokeStyle = "black";
+        ctx.lineWidth = 10;
+        ctx.lineCap = 'round'
+
+        ctx.beginPath();
+        ctx.moveTo(900, 300);
+        ctx.lineTo(800, 300);
+        ctx.closePath() 
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(1080, 300);
+        ctx.lineTo(980, 300);
+        ctx.closePath() 
+        ctx.stroke();
+    </script>
+  </body>
+</html>

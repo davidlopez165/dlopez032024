@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>David Lopez - Portfolio</title>
+    <style>
+      /* set page colors with variables */
+      :root
+      {
+        --color-primary:#000000;
+        --color-secondary:#FF5A00;
+      }
+
+      
+      /* reset browser */
+      *, *::before, *::after
+      {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* fix browser bounce */
+      body
+      {
+        overflow-x: auto;
+        width: 100%;
+        overscroll-behavior: none;
+      }
+
+      /* general css for moblie first */
+      body
+      {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5;
+        background-color:#F8FAFC;
+        color: #333;
+      }
+
+      a
+      {
+        text-decoration: none;
+      }
+
+      p
+      {
+        margin: 1rem 0;
+      }
+
+      h1,h2{
+        text-align: center;
+      }
+      
+      h1,h2,h3
+      {
+        line-height: 1.2;
+      }
+
+      li
+      {
+        line-height:2;
+      }
+
+      .container
+      {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 30px;
+      }
+
+      /* Jump ahead code */
+
+
+
+
+    /* Header */
+    .header
+    {
+      background-color:var(--color-primary);
+      height: 70px;
+    }
+
+    /* make header .container */
+    .header .container
+    {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      padding: 0 20px 0 20px;
+    }
+
+    header img
+    {  
+      height: 45px;
+    }
+    
+    .menu
+    {
+      display: flex;
+      width: 200px;
+      list-style-type: none;
+    }
+    .menu li
+    {
+      padding: 0 10px 0 10px;
+    }
+    .menu li a 
+    {
+      color: #fff;
+    }
+
+    /* Show case */
+
+    .showcase
+    {
+      background-color:var(--color-secondary);
+      padding: 30px;
+      background-image: linear-gradient(to bottom, var(--color-primary), var(--color-secondary) );
+    }
+    #showcase-text
+    {
+      color: #fff;
+      text-align: center;
+      margin: 50px auto;
+      max-width: 500px;
+    } 
+    .showcase h1
+    {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+    .showcase p
+    {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .showcase-img
+    {
+      text-align: center;
+    }
+    .showcase-img img
+    {
+      border-radius: 10px;
+      margin: 0 auto;
+    }
+    .logos
+      {
+        display: none;
+        margin: auto;
+      }
+.logos-small{
+  display: block;
+}
+    .showcase-demo
+    {
+      color: #fff;
+      text-align: center;
+    }
+
+    .features{
+      margin-top: 2rem;
+    }
+    .features .container
+    {
+      background-color: none;
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+    .container
+    {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 30px;
+      border: 5px dashed none;
+    }
+    /* cards */
+    .card {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px silver;
+      margin-bottom: 20px;
+      flex-basis: 28%;
+    }
+
+    /* page content */
+    .page-content{
+      margin: 20px 0;
+    }
+    .page-content h2, 
+    .page-content h3
+    {
+      margin: 20px 0;
+    }
+    .page-content h2{
+      font-size: 40px;
+    }
+
+    .page-content h3{
+      font-size: 25px;
+    }
+
+
+/* Semesters */
+    .semesters{
+      margin: 20px 0;
+    }
+    .semesters h2, 
+    .semesters h3
+    {
+      margin: 20px 0;
+    }
+    .semesters h2{
+      font-size: 40px;
+    }
+
+    .semesters h3{
+      font-size: 25px;
+    }
+
+    /* footer section */
+    .footer
+    {
+      background-color:var(--color-primary);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+    .footer .container
+    {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .footer a
+    {
+      color: blueviolet;
+    }
+    .footer a :hover
+    {
+      color: var(--color-secondary);
+    }
+    .footer h3
+    {
+      margin-bottom: 20px;
+    }
+    .quote
+    {
+      text-align: left;
+    }
+    .footerlinks
+    {
+      display: none;
+    }
+    @media(min-width:700px)
+    {
+      .features .container
+      {
+        flex-direction: row;
+      }
+      h1, h2
+      {text-align: left;}
+
+      .footerlinks
+      {display: block;}
+    }
+
+    @media(min-width:960px)
+    {
+      .logos
+      {
+        display: block;
+        margin: auto;
+      }
+      .logos-small
+      {
+        display: none;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <!-- begin header -->
+    <header class="header">
+      <!-- add container for sizing ** -->
+      <!-- add link to index ** -->
+<div class="container">
+            <div class="logo">
+              <a href="index.html"><img src="img/logo.png" alt="logo" /></a>
+            </div>
+  
+            <nav>
+              <!--  add links to pages ** -->
+              <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </nav>
+</div>
+    </header>
+    <!-- end header -->
+
+
+    
+
+    <!-- begin showcase -->
+    <section class="showcase">
+      <div id="showcase-text">
+        <h1>David Lopez</h1>
+        <h2>Portfolio</h2>
+      </div>
+
+
+
+      <div class="showcase-img">
+        <!-- link to framework images verus platforms ** -->
+        <img src="img/framework-logos.png" alt="framework logo" class="logos" />
+        <img src="img/framework-logos-small.png" alt="framework logo" class="logos-small" />
+      </div>
+
+      <!-- add text** -->
+    <p class="showcase-demo">
+      <small>Work Showcase</small>
+    </p> 
+
+    </section> 
+    <!-- end showcase -->
+
+    <!-- begin features -->
+    <section class="features">
+      <!-- add container div ** -->
+
+      <div class="container">
+        <div class="card">
+          <h3>Career</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus, qui.
+          </p>
+        </div>
+  
+        <div class="card">
+          <h3>Design</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus, qui.
+          </p>
+        </div>
+  
+        <div class="card">
+          <h3>Programming</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus, qui.
+          </p>
+        </div>
+      </div>
+
+      <!-- end container here ** -->
+    </section>
+    <!-- end features -->
+
+    <!-- start page-content here ** -->
+    <section class="page-content">
+
+
+    <div class="container">
+        <h2>Introduction</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae officia delectus illo saepe perspiciatis. Aliquam ad labore unde autem laudantium, aperiam doloribus nam placeat repudiandae quaerat aut, voluptatibus quasi id?</p>
+        <h3>Career</h3>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad iure mollitia alias laborum vitae voluptatum commodi culpa dolorum quae enim in, blanditiis sint minus quia perferendis consectetur, nisi earum accusantium!
+        <h3>Design</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolorem quas omnis totam et, aspernatur soluta reprehenderit odio! Sapiente iste laborum quidem error dolores culpa ab numquam dolorum nesciunt cupiditate!</p>
+        <h3>Programming</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta itaque, deleniti nam exercitationem quis esse animi, molestiae autem sapiente quaerat nulla aperiam voluptate repellendus nemo nobis modi. Sequi, earum ut.</p>
+</div>
+    </section>
+    <!-- end page-content -->
+
+    <!-- begin semester section -->
+    <section class="semesters">
+<div class="container">
+        <h2>Key Assignments</h2>
+        <h3>Semester 1</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus nisi praesentium numquam cupiditate optio quos sit nemo nulla totam vel!</p>
+        <h3>Semester 2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae mollitia, nisi sequi perspiciatis fuga quibusdam. Totam asperiores dolorum ipsam ad?</p>
+        <h3>Semester 3</h3>
+        <h3>Semester 4</h3>
+</div>
+    </section>
+    <!-- end semester section -->
+
+    <!-- begin footer section -->
+    <footer class="footer">
+
+<div class="container">
+
+        <div class="quote"> 
+        <h3>
+          Final thoughts
+        </h3>
+        <blockquote>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, ipsum.</blockquote>
+        <p>- anonymous</p>
+      </div>
+  
+      <div class="footerlinks">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+</div>
+
+    </footer>
+    <!-- end footer section -->
+  </body>
+</html>
+      

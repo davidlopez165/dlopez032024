@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas Drawing 1</title>
+    <style>
+        *,
+        *::before, 
+        *::after
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    h1 {
+        text-align: center;
+    }
+    #canvas {
+        margin: auto;
+        display: block;
+        border: 1px solid silver;
+    }
+    </style>   
+    </head>
+    <body>
+    <h1>Canvas Drawing</h1>
+    <canvas id="canvas" width="1000px" height="500px"></canvas>
+
+    <script>
+      // Create variables
+    const canvas = window.document.querySelector('#canvas');
+    const ctx = canvas.getContext('2d');
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    ctx.fillStyle = "darkgreen";
+    ctx.fillRect(685, 530, 550, 280);
+
+    ctx.fillStyle = "darkgreen";
+    ctx.fillRect(1140, 580, 220, 220);
+
+    ctx.fillStyle = "lightblue";
+    ctx.fillRect(1270, 600, 70, 120);
+
+    ctx.fillStyle = "black"
+        ctx.lineWidth = 5;
+        ctx.arc(790, 790, 80, 0, Math.PI * 2);
+        ctx.fill(); 
+        ctx.stroke();
+
+        ctx.fillStyle = "black"
+
+        ctx.arc(1100, 790, 80, 0, Math.PI * 2);
+        ctx.fill(); 
+        ctx.stroke();
+
+    </script>
+    </body>
+</html>

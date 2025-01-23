@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays for Each</title>
+</head>
+<body>
+    <h1>Arrays for Each</h1>
+
+    <script>
+        // Arrays
+        // Cycle through array elements
+
+        let myPokedex;
+        myPokedex = []   // Blank array
+
+        // Assign values to array
+        myPokedex[0] = "Totodile"    
+        myPokedex[1] = "Croconaw"        
+        myPokedex[2] = "Feraligatr"         
+        myPokedex[3] = "Gengar"       
+        myPokedex[4] = "Greninja Mega Y"        
+        myPokedex[5] = "Lucario"        
+        myPokedex[6] = "Snorlax"       
+        myPokedex[7] = "Lugia"        
+        myPokedex[8] = "Shiny Rayquaza"        
+        myPokedex[9] = "Charizard X"        
+
+        //Display
+        window.document.write(myPokedex);
+
+        // Manipulate the arrays
+        myPokedex.push('Gengar');
+        myPokedex.push('Lugia');
+
+        //Display
+        console.log(myPokedex);
+
+        // Correct error
+        myPokedex.pop(); // Delete Fido last element
+        myPokedex.shift(); // Delete Fluffy first lement
+
+        // Manipulate the array
+        myPokedex.unshift('Totodile');
+
+        // Display # of elements in an arrary
+        console.log(myPokedex.length);
+
+
+
+        myPokedex.forEach( function(cat) 
+        {
+
+            console.log("I love " + cat);
+
+        }
+            );
+
+
+            myPokedex.forEach(  function(c)    
+        {
+            console.log ("I miss " + c)
+        }  
+                );  
+                
+
+                myPokedex.forEach ( function( cn, index)
+        {
+            window.alert(cn + " is index " + index);
+        }
+
+    
+        );
+
+
+
+
+    </script>
+</body>
+</html>

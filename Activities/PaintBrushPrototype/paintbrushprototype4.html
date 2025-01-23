@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paintbrush Version 4</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        #canvas
+        {
+            border: 1px solid black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        #menu
+        {
+            background-color: silver;
+            border: 2px solid black;
+            height: 60px;
+            position: fixed;
+            width: 100%;
+            padding: 1rem;
+            bottom: 0;
+        }
+        #eraser
+        {
+            background-image: url(images/eraser.svg);
+            background-position-y: -10px ;
+            background-repeat: none;
+            background-size:cover;
+            background-size: 80px;
+            border: 2px solid black;
+            height: 60px;
+            position: fixed;
+            width: 5%;
+            padding: 1rem;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas">
+
+    </canvas>
+
+    <section id="menu">
+        <input type="color" id="colorpicker" value="#FF0000">
+        <input type="range" id="rangepicker" min="5" max="100" value="15">
+        <button id="eraser" onclick="addEventListener(brushColor = 'white');"></button>
+    </section>
+
+    <!-- Create canvas and assign values -->
+    <script>
+
+        
+        // Create JavaScript Variables
+        let canvasColor = 'white';
+        let brushColor = 'red';
+        let painting = false;
+        let brushSize = 15;
+
+        const canvas = window.document.querySelector('#canvas');
+        const ctx = canvas.getContext('2d');
+        ctx.strokeStyle = brushColor;
+        ctx.lineWidth = brushSize;
+        ctx.lineCap = 'round';
+    
+        // Colorpicker var
+        const colorPicker = window.document.querySelector('#colorpicker');
+        const rangePicker = window.document.querySelector('#rangepicker');
+
+        // Set the canvas
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        // Set canvas color
+        canvas.style.backgroundColor = canvasColor;
+
+        // Create mouse object
+        const mouse =
+        {
+            x: undefined,
+            y: undefined,
+        };
+        // Add event listener to color picker
+        colorPicker.addEventListener('input', function (e)
+        {
+            brushColor = e.target.value;
+        });
+
+        rangePicker.addEventListener('input', function(e)
+        {
+            brushSize = e.target.value;
+        });
+        // Add several event listeners to the canvas
+        canvas.addEventListener('mousedown', function(e)
+        {
+            painting = true;
+            ctx.moveTo(mouse.x, mouse.y );
+            draw();
+        });
+        canvas.addEventListener('mousemove', function(e)
+        {
+            mouse.x = e.x;
+            mouse.y = e.y;
+            draw();
+        });
+        canvas.addEventListener('mouseup', function(e)
+        {
+            painting = false;
+            ctx.beginPath();
+        });
+
+        // Create named function to draw
+        function draw()
+            {
+                if (painting == true)
+                {
+                    // ctx.beginPath();
+                ctx.strokeStyle = brushColor;
+                ctx.lineJoin = 'round';
+                ctx.lineWidth = brushSize;
+                // ctx.arc(mouse.x, mouse.y, brushSize, 0, Math.PI * 2);
+                // ctx.fill();
+                ctx.lineTo(mouse.x, mouse.y);
+                ctx.stroke();
+                }
+            }
+
+        window.addEventListener('resize', function()
+        {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+</body>
+</html>
