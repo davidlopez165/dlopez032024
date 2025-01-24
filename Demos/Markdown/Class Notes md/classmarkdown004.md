@@ -1,8 +1,10 @@
 # Class Notes 004
 
-# Emergency Fund: What It Is and Why It Matters
+# [Emergency Fund](https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/): What It Is and Why It Matters
 
 ## What is an emergency fund?
+
+![Emergency Fund Image](images/download.jpeg)
 
 An emergency fund is a savings account that you set aside for unexpected expenses. such as: unforeseen medical bills, car repairs, or job loss.
 
