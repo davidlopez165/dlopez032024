@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    
+    <!-- Prepare for mobile - avoid user resizing -->
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+
     <title>Painting App</title>
     <style>
         *
@@ -11,6 +15,18 @@
             margin:0;
             padding:0;
         }
+        /* Molbie CSS Adujustments */
+        html
+        {
+            overflow: hidden;
+        }
+
+        #erase, #clear, #undo, #download
+        {
+            touch-action: manipulation;
+        }
+        /*  */
+
         body
         {
             background-color:red;
@@ -162,6 +178,13 @@
         x: undefined,
         y: undefined,
     };
+
+    /*
+    Match mouse events with touch events
+    mousedown/touchstart
+    mousemove/touchmove
+    mouseup/touchend
+    */
     
     // Create painting events (mousedown, mousemove, mouseup)
     CANVAS.addEventListener('mousedown', function(e)
@@ -196,9 +219,65 @@
         // Create variable to hold the image data
         canvasData = CTX.getImageData(0,0, CANVAS.width, CANVAS.height);
         //alert(canvasData);
-        console.log(canvasData);
+        //console.log(canvasData);
 
     });
+
+    ///// Touch events /////
+
+    window.document.body.addEventListener('touchstart', function(e)
+    {
+        //prevent default webpage drag
+        e.preventDefault();
+    }, {passive: false});
+
+        // Create painting events (mousedown, mousemove, mouseup)
+        CANVAS.addEventListener('touchstart', function(e)
+    {
+        painting = true;
+
+        //consolesole.log(e);
+        // Capture X and Y coordinates
+        MOUSE.x =  e.touches[0].clientX;
+        MOUSE.y =  e.touches[0].clientY;
+
+        // Start painting
+        CTX.beginPath();
+        CTX.moveTo(MOUSE.x, MOUSE.y);
+        /////////////////
+       // console.log(e);
+    })
+
+    CANVAS.addEventListener('touchmove', function(e)
+    {
+        //console.log(MOUSE.x + " " + MOUSE.y);
+        MOUSE.x = e.touches[0].clientX;
+        MOUSE.y = e.touches[0].clientY;
+
+        draw();
+
+    });
+
+    CANVAS.addEventListener('touchend', function(e)
+    {
+        painting = false;
+
+        // Create variable to hold the image data
+        canvasData = CTX.getImageData(0,0, CANVAS.width, CANVAS.height);
+        //alert(canvasData);
+        //console.log(canvasData);
+
+    });
+
+    function captureImageData(e)
+    {
+        if(e.type == 'mouseup' || e.type == 'touchend')
+    {
+        undoArray.push(canvasData);
+
+        undoIndex = undoIndex + 1;
+    }
+    }
 
     window.addEventListener('resize', function()
     {
@@ -234,7 +313,7 @@ function draw()
         eles
         {
             undoIndex = undoIndex - 1;
-            console.log(undoIndex);
+            //console.log(undoIndex);
 
             undoArray.pop(); // Delete last item in array (snapshot)
             CTX.putImageData(undoArray[undoIndex], 0,0  );
