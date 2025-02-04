@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid Layout</title>
+<style>
+/* Mobile First Design */
+body
+{
+background-color: tomato;
+padding-top:1rem;
+}
+#container
+{
+max-width:1200px;
+background-color: cadetblue;
+margin:auto;
+border:1px solid black;
+}
+nav
+{
+background-color: lavender;
+min-height:5rem;
+padding:1rem;
+}
+header{
+background-color: salmon;
+min-height:5rem;
+padding:1rem;
+
+}
+div#media
+{
+background-color: gold;
+min-height:5rem;
+padding:1rem;
+}
+main
+{
+background-color: white;
+min-height:5rem;
+padding:1rem;
+}
+aside
+{
+background-color: lemonchiffon;
+min-height:5rem;
+padding:1rem;
+}
+footer
+{
+background-color: salmon;
+min-height:5rem;
+padding:1rem;
+}
+footer#subfooter
+{
+background-color: sandybrown;
+min-height:5rem;
+padding:1rem;
+}
+/* Tablet and Desktop */
+/* Media Queries */
+@media screen and (min-width:480px)
+{
+body{background-color: brown;}
+}
+@media screen and (min-width:768px)
+{
+body{background-color: crimson;}
+}
+@media screen and (min-width:1200px)
+{
+body{background-color: darkred;}
+}
+</style> 
+</head>
+<body>
+
+<div id="container">
+<nav>Nav</nav>
+
+<header>Header</header>
+
+<div id="media"></div>
+
+<main>Main</main>
+
+<aside>Aside</aside>
+
+<footer>Footer</footer>
+
+<footer id="subfooter"></footer>
+</div>
+
+</body>
+</html>
