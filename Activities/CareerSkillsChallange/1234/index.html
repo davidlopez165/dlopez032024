@@ -23,57 +23,96 @@ nav
 background-color: lavender;
 min-height:5rem;
 padding:1rem;
+grid-area: nav;
 }
 header{
 background-color: salmon;
 min-height:5rem;
 padding:1rem;
-
+grid-area: hea;
 }
 div#media
 {
 background-color: gold;
 min-height:5rem;
 padding:1rem;
+grid-area: med;
 }
 main
 {
 background-color: white;
 min-height:5rem;
 padding:1rem;
+grid-area: mai;
 }
 aside
 {
 background-color: lemonchiffon;
 min-height:5rem;
 padding:1rem;
+grid-area: asi;
 }
 footer
 {
 background-color: salmon;
 min-height:5rem;
 padding:1rem;
+grid-area: foo;
 }
 footer#subfooter
 {
 background-color: sandybrown;
 min-height:5rem;
 padding:1rem;
+grid-area: sub;
 }
 /* Tablet and Desktop */
 /* Media Queries */
-@media screen and (min-width:480px)
-{
-body{background-color: brown;}
-}
-@media screen and (min-width:768px)
-{
-body{background-color: crimson;}
-}
-@media screen and (min-width:1200px)
-{
-body{background-color: darkred;}
-}
+    @media screen and (min-width:480px)
+        {
+            body{background-color: brown;}
+            #container
+            {
+                display: grid;
+                grid-template-areas: 
+                "hea hea hea hea"
+                "nav nav nav nav"
+                "med med med med"
+                "mai mai mai mai"
+                "asi asi asi asi"
+                "foo foo foo foo"
+                "sub sub sub sub"
+                ;
+                div#media
+                {
+                    min-height: 10rem;
+                    transition: all 2s;
+                }
+                main
+                {
+                    min-height: 10rem;
+                }
+            }
+        }
+    @media screen and (min-width:768px)
+        {
+            body{background-color: crimson;}
+            #container
+            {
+                display: grid;
+                grid-template-areas:
+                "hea hea hea hea"
+                "nav nav nav nav"
+                "med med med med"
+                "mai mai mai asi"
+                "foo foo foo asi"
+                "sub sub sub sub"
+            }
+        }
+    @media screen and (min-width:1200px)
+        {
+            body{background-color: darkred;}
+        }
 </style> 
 </head>
 <body>
@@ -83,7 +122,7 @@ body{background-color: darkred;}
 
 <header>Header</header>
 
-<div id="media"></div>
+<div id="media">Media</div>
 
 <main>Main</main>
 
