@@ -74,6 +74,7 @@ grid-area: sub;
             #container
             {
                 display: grid;
+                gap: 10px;
                 grid-template-areas: 
                 "hea hea hea hea"
                 "nav nav nav nav"
@@ -111,7 +112,22 @@ grid-area: sub;
         }
     @media screen and (min-width:1200px)
         {
-            body{background-color: darkred;}
+            body
+            {
+                background-color: darkred;
+            }
+            header
+            {
+                min-height: 10rem;
+            }
+            div#media
+            {
+                min-height:18rem;
+            }
+            main
+            {
+                min-height: 30rem;
+            }
         }
 </style> 
 </head>
