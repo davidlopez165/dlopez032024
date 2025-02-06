@@ -124,6 +124,49 @@
             border: 4px solid black;
         }
 
+        @media screen and (min-width:480px)
+        {
+            #wrapper
+            {
+                display: grid;
+                gap: 10px;
+                grid-template-areas: 
+                "hea hea hea "
+                "nav nav nav "
+                "med med med "
+                "mai mai asi "
+                "mai mai asi "
+                "cr1 cr1 cr1 "
+                "cr2 cr2 cr2 "
+                "cr3 cr3 cr3 "
+                "foo foo foo "
+                "pagdet pagdet pagdet"
+                ;
+            }
+        } 
+        @media screen and (min-width:1200px)
+        {
+            body
+            {
+                background-color: darkred;
+            }
+            #wrapper
+            {
+                display: grid;
+                gap: 10px;
+                grid-template-areas:
+                "hea hea hea "
+                "nav nav nav "
+                "med med med "
+                "mai mai asi "
+                "mai mai asi "
+                "cr1 cr2 cr3 "
+                "foo foo foo "
+                "pagdet pagdet pagdet"
+                ;
+            }
+        }
+
 
     </style>
     <div id="container">
