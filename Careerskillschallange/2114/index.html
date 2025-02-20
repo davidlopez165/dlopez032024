@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Valley Pets</title>
+    <style>
+        html
+        {
+            scroll-behavior: smooth;
+        }
+        body
+        {
+            background-color: rgb(45, 125, 211);
+            padding-top: 6rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1, h2, h3
+        {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #container
+        {
+        max-width: 1200px;
+        background-color: cyan;
+        margin: auto;
+        border: 1px solid black;
+        padding: 3rem;
+        }
+        #wrapper
+        {
+            background-color: #60442D;
+            width: 80%;
+            max-width: 1800px;
+            margin: auto;
+            padding: 2rem;
+        }
+        header
+        {
+            background-color: burlywood;
+            min-height: 230px;
+            padding: 1rem;
+            background-image: url(Images/beagleCat.jpg);
+            background-position: center center;
+            background-size: 1000px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 4px solid black;
+            grid-area: hea;
+            color: white;
+            text-align: center;
+            text-shadow: 6px 6px 6px black;
+        }
+        p
+        {
+            font-size: 50px;
+        }
+        #logo
+        {
+            background-color: rgb(14, 14, 14);
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-image: url(Images/logo2.jpg);
+            background-size: cover;
+            border: 5px solid black;
+            left: 10px;
+            top: 55px;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        nav
+        {
+            background-color: #676457;
+            min-height:30px;
+            padding:.5rem;
+            text-align: center;
+            border: 4px solid black;
+            grid-area: nav;
+        }
+        nav a{color: black;
+        }
+        nav a:hover{
+            color: #000;
+            transition: 0.3s;
+            text-shadow: 10px 10px 10px black;
+            border: 2px dotted black;
+            transition: .1s;
+        }
+        aside a{color: black;
+        }
+        aside a:hover{
+            color: #000;
+            transition: 0.3s;
+            text-shadow: 10px 10px 10px black;
+            border: 2px dotted black;
+            transition: .1s;
+        }
+        #media
+        {
+            background-color:#C7BCBC;
+            min-height: 140px;
+            padding: 1rem;
+            grid-area: med;
+            border: 4px solid black;
+            align-items: center;
+        }   
+        main
+        {
+            background-color: #C7BCBC;
+            min-height: 140px;
+            padding: 1rem;
+            grid-area: mai;
+            border: 4px solid black;    
+            color: #333;
+            line-height: 1.7;
+        }
+        aside
+        {
+            background-color: #C7BCBC;
+            min-height: 140px;
+            padding: 1rem;
+            grid-area: asi;
+            border: 4px solid black;
+        }
+        footer
+        {
+            background-color: #C7BCBC;
+            min-height: 140px;
+            padding: 1rem;
+            grid-area: foo;
+            border: 4px solid black;
+            color: #333;
+            line-height: 1.7;
+        }
+        #deatils
+        {
+            background-color: #C7BCBC;
+            min-height: 140px;
+            padding: 1rem;
+            grid-area: det;
+            border: 4px solid black;
+            text-align: center;
+        }
+        @media screen and (min-width:768px)
+        {
+            body
+            {
+                background-color: rgb(45, 125, 211);
+            }
+            #wrapper
+            {
+                background-color: #60442D;
+                display: grid;
+                grid-template-areas:
+                "hea hea hea"
+                "nav nav nav"
+                "med med med"
+                "mai mai asi"
+                "foo foo foo"
+                "det det det"
+                ;
+                aside
+                {
+                    min-height: 480px;
+                    min-width: 20px;
+                }
+                main
+                {
+                    min-height: 480px;
+                    max-width: 1280px;
+                }
+            }
+            #logo
+        {
+            background-color: rgb(14, 14, 14);
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-image: url(Images/logo2.jpg);
+            background-size: cover;
+            border: 5px solid black;
+            left: 150px;
+            top: 85px;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        }
+        video
+        {
+            display: block;
+            width: 80%;
+            margin: auto;
+            border-radius: 35px;
+            border: black 5px solid;
+        }
+        .image1
+        {
+            max-width: 60%;
+            height: auto;
+            float: right;
+            margin: 1rem;
+            box-shadow: 2px 2px 2px 2px black;
+        }
+    </style>
+</head>
+<body>
+    <div id="contanier">
+    <div id="wrapper">
+
+    <header>
+        <p>Central Valley Pets Inc.</p>
+        <a href="index.html"><div id="logo"></div></a>
+    </header>
+    <nav>
+        <h4>
+            <a href="">Why Adopt</a> 
+            |
+            <a href="">Donate</a>
+            |
+            <a href="">Volunteer</a>
+        </h4>
+    </nav>
+    <div id="media">
+        <video src="videos/Pedigree Dog Commercial - Shelter Dog 720.mp4" controls loop autoplay muted></video>
+    </div>
+    <main>
+    <h4> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde perspiciatis, accusamus magnam sed maiores error fugiat eveniet ad porro quisquam eum debitis deserunt dignissimos totam nulla animi quam officia dolorum obcaecati aut! Necessitatibus, nesciunt accusamus suscipit ullam deserunt facilis ducimus, reiciendis esse commodi dolor vel? Laboriosam voluptas asperiores quo eum atque, totam commodi, facilis itaque iure velit adipisci incidunt ea quidem quaerat ut. Rerum ut explicabo velit, molestiae est iure corporis, laudantium cupiditate eveniet impedit fugit facilis eum sint ipsam fuga saepe consequuntur laborum fugiat sed blanditiis. Esse illo nam hic vitae tempore ipsa facere delectus commodi quas eligendi quo expedita, officia explicabo neque error praesentium, a molestiae sequi minus dolores? Minus, debitis magni voluptatibus necessitatibus possimus atque consectetur veritatis facere quas animi, voluptate dolorem deleniti? Itaque nulla, reprehenderit earum placeat veniam doloribus. In et maxime aperiam dicta distinctio, nostrum dolorum pariatur praesentium fugit quos quo tempora repudiandae, officia officiis veniam, enim rem eligendi repellat ab deleniti aut! Tenetur, autem? Placeat, excepturi laborum optio eaque aliquam explicabo vel, nam eos debitis, commodi id deleniti itaque dolorum aspernatur necessitatibus ipsum ducimus iste odio quam? Delectus ratione sequi placeat blanditiis reprehenderit, illum error nesciunt facere suscipit atque labore non beatae eligendi nobis eum ipsa repellat corrupti adipisci quia tempora? Omnis est libero iure! </h4>
+    <img class="image1" src="Images/man-dogShoulder.jpg" alt="A dog on a mans shoulder">
+    <h4>Deleniti voluptatibus dicta quae omnis rem ex provident, soluta fugit repellat! Accusantium, laudantium blanditiis a eveniet minima deserunt provident beatae doloribus itaque commodi harum, voluptatibus deleniti vel mollitia, cumque porro explicabo! Eligendi, beatae consequuntur laboriosam fuga officia mollitia debitis sint nihil harum praesentium nulla aliquid, magni dolorem asperiores deleniti modi cupiditate dolore labore? Quas cupiditate maxime hic, vel voluptate ratione aut eius mollitia dolorum fuga a eligendi quia facilis tempore animi iusto incidunt vero quos consequuntur perferendis totam soluta, dolores architecto! Voluptas perspiciatis est, autem odit omnis, optio minus blanditiis commodi cumque dolor voluptates eveniet quibusdam velit nemo illo sed iste ullam at nobis? Consequuntur eaque dolorem assumenda delectus ipsum consequatur nemo explicabo, reiciendis illum necessitatibus aspernatur itaque quos qui ipsam obcaecati, deleniti asperiores doloremque accusantium, mollitia.</h4>
+    </main>
+    <aside>
+        <ul>
+            <li><a href="#">Why Adopt</a></li>
+            <li><a href="#">Donate</a></li>
+            <li><a href="#">Volunteer</a></li>
+        </ul>
+    </aside>
+    <footer>
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, voluptates? Magni, sint, quis eveniet aliquam exercitationem quo impedit ut tempore fugit, iusto labore quasi quos totam optio temporibus! Aliquam culpa cupiditate nobis minus dolores maiores necessitatibus vel, veritatis pariatur a autem quam ipsa quos hic, magnam ducimus dolore sunt debitis nihil quibusdam! Fuga rem non sit sunt voluptas delectus sint consectetur, incidunt error debitis id quae et praesentium rerum vero hic consequatur eaque. Voluptatibus tempore officiis incidunt molestiae veniam nam!</h4>
+    </footer>
+    <footer id="deatils">
+        <h2> &copy Central Valley Pets Inc. </h2>
+    </footer>   
+
+    </div>
+    </div>
+</body>
+</html>
