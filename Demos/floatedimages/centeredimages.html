@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Floated Images</title>
+    <title>Centered Images</title>
     <style>
         body
         {
@@ -33,24 +33,21 @@
             margin: auto;
             box-shadow: 2px 2px 2px 2px black;
         }
-        figure.rightimage
+        img.rightimage
         {
             max-width: 60%;
             height: auto;
             float: right;
             margin: 1rem;
+            box-shadow: 2px 2px 2px 2px black;
         }
-        figure.leftimage
+        img.leftimage
         {
             max-width: 60%;
             height: auto;
             float: left;
             margin: 1rem;
-        }
-        main img
-        {
-            max-width: 100%;
-            box-shadow: 4px 4px 4px black;
+            box-shadow: 2px 2px 2px 2px black;
         }
         figure
         {
@@ -60,20 +57,12 @@
         {
             text-align: center;
         }
-
-        /* Clear the floated images */
-        .clearfix::after
-        {
-            content: "";
-            display: table;
-            clear: both;
-        }
     </style>
 </head>
 <body>
     <div id="wrapper">
-        <main class="clearfix">
-                <h1>Floated Images</h1>
+        <main>
+                <h1>Centered Images</h1>
                 <figure>
                     <img class="centerimg" src="images/mainkeyboard.png" alt="keyboard">
 
@@ -83,8 +72,8 @@
                 </figure>
 
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, autem praesentium? Vel doloremque maxime ratione non, sint sed. Molestiae perspiciatis quod voluptas facere sint cupiditate maxime, reiciendis dolore magnam architecto neque maiores iure vel beatae recusandae aliquid voluptates molestias unde. Voluptatibus ipsa magni tempore, illum beatae sapiente id laboriosam aliquid necessitatibus! Voluptatibus debitis mollitia cumque error nam ipsum laudantium expedita.</p>
-                <figure class="rightimage">
-                    <img  src="images/mainimage1.png" alt="code 1">
+                <figure>
+                    <img class="centerimg" src="images/mainimage1.png" alt="code 1">
 
                     <figcaption>code 1</figcaption>
                 </figure>
@@ -94,8 +83,8 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, autem praesentium? Vel doloremque maxime ratione non, sint sed. Molestiae perspiciatis quod voluptas facere sint cupiditate maxime, reiciendis dolore magnam architecto neque maiores iure vel beatae recusandae aliquid voluptates molestias unde. Voluptatibus ipsa magni tempore, illum beatae sapiente id laboriosam aliquid necessitatibus! Voluptatibus debitis mollitia cumque error nam ipsum laudantium expedita.</p>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, autem praesentium? Vel doloremque maxime ratione non, sint sed. Molestiae perspiciatis quod voluptas facere sint cupiditate maxime, reiciendis dolore magnam architecto neque maiores iure vel beatae recusandae aliquid voluptates molestias unde. Voluptatibus ipsa magni tempore, illum beatae sapiente id laboriosam aliquid necessitatibus! Voluptatibus debitis mollitia cumque error nam ipsum laudantium expedita.</p>
 
-                <figure class="leftimage" >
-                    <img src="images/mainimage2code.png" alt="code 2">
+                <figure>
+                    <img class="centerimg" src="images/mainimage2code.png" alt="code 2">
                     <figcaption>code 2</figcaption>
                 </figure>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, autem praesentium? Vel doloremque maxime ratione non, sint sed. Molestiae perspiciatis quod voluptas facere sint cupiditate maxime, reiciendis dolore magnam architecto neque maiores iure vel beatae recusandae aliquid voluptates molestias unde. Voluptatibus ipsa magni tempore, illum beatae sapiente id laboriosam aliquid necessitatibus! Voluptatibus debitis mollitia cumque error nam ipsum laudantium expedita.</p>
