@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Central Valley Pets</title>
+    <title>Our Animals</title>
     <style>
         html
         {
@@ -56,9 +56,17 @@
         {
             font-size: 50px;
         }
-        p#About
+        p#adopt
         {
             font-size: 20px;
+            text-align: center;
+            gap: 10px;
+        }
+        p#abtpets
+        {
+            font-size: 20px;
+            text-align: center;
+            gap: 10px;
         }
         p#footer
         {
@@ -131,6 +139,7 @@
             grid-area: med;
             border: 4px solid black;
             align-items: center;
+            display: none;
         }   
         main
         {
@@ -212,19 +221,41 @@
         }
         video
         {
-            display: block;
+            display: none;
             width: 65%;
             margin: auto;
             border-radius: 35px;
             border: black 5px solid;
         }
-        .image1
+        #dog
         {
-            max-width: 60%;
-            height: auto;
-            float: right;
-            margin: 1rem;
-            box-shadow: 2px 2px 2px 2px black;
+            margin: auto;
+            border: 3px solid black;
+            
+        }
+        #cats
+        {
+            margin: auto;
+            border: 3px solid black;
+            
+        }
+        #rabbits
+        {
+            margin: auto;
+            border: 3px solid black;
+            
+        }
+        #turtles
+        {
+            margin: auto;
+            border: 3px solid black;
+            
+        }
+        #fish
+        {
+            margin: auto;
+            border: 3px solid black;
+            
         }
         #about
         {
@@ -266,22 +297,49 @@
         <video src="videos/Pedigree Dog Commercial - Shelter Dog 720.mp4" controls loop autoplay muted></video>
     </div>
     <main>
-        <h1>About Us</h1>
-    <p id="About"> At Central Valley Pets Inc, we are dedicated to providing a safe, loving, and welcoming environment for children in need of forever families. Our mission is to connect children with adoptive parents who are ready to provide them with the care, support, and love they deserve. With a deep commitment to making a positive impact on children's lives, our center works to facilitate the adoption process in a way that respects the rights of both the children and the families involved.
-
-        We understand that adoption is a life-changing experience, not only for the children but also for the families who choose to open their hearts and homes. Therefore, our approach is focused on supporting and guiding both prospective adoptive parents and children every step of the way. Whether you are considering adopting a child, fostering a child, or are currently in the adoption process, our team is here to offer advice, counseling, and assistance.
+        <h1>Our Animals</h1>
+    <p id="adopt">
+        Our Dogs
         
-        Our team consists of highly skilled professionals with expertise in adoption, child welfare, social work, and family counseling. We work with a wide variety of families, ensuring that the adoption process is transparent, ethical, and compassionate. We are dedicated to advocating for the children’s best interests and work tirelessly to ensure they are placed in homes where they will thrive and grow.
-        
-        The adoption process can often feel overwhelming, but our team is here to make it as smooth and seamless as possible. We provide in-depth information about the different types of adoption programs available, such as domestic, international, and foster-to-adopt programs. Each program has its own requirements, but our staff is always ready to answer questions, provide guidance, and ensure that every potential parent is well-prepared for the journey ahead. </p>
-    <img class="image1" src="Images/man-dogShoulder.jpg" width="400px" alt="A dog on a mans shoulder">
-    <p id="About">Central Valley Pets Inc. also focuses on educating families about the emotional and psychological needs of adopted children. We offer pre-adoption counseling, support groups, and resources that help families navigate the unique challenges that can arise during the adoption process. This includes advice on attachment, trauma-informed care, and understanding the child’s background and history.
+    </p>
+    <img id="dog" src="Images/dogs/medium/couple-withDog.jpg" alt="A dog in the middle of a couple" width="350px">
+    <img id="dog" src="Images/dogs/medium/dog-leash.jpg" alt="A dog looking at a leash" width="300px">
+    <img id="dog" src="Images/dogs/medium/family-cageDog.jpg" alt="A family looking at a dog in his cage" width="290px">
+    
 
-        We also strongly believe in post-adoption services. The journey does not end once a child is placed with their forever family. Our center continues to offer support and resources to families post-adoption to help ensure the child’s long-term success and well-being. This includes follow-up visits, counseling, and additional support when needed.</p>
-    <p id="About">
-        Our core belief is that every child deserves a loving and stable family, and every family has the capacity to provide that care. We are proud to have successfully matched countless children with families who offer love, stability, and security. The positive impact these adoptions have on the children and families involved is immeasurable, and it is what keeps our team motivated and passionate about the work we do.
+    <p id="adopt">
+        Our Cats
+    </p>
+    <img src="Images/cats/medium/kissKitten.jpg" alt="A man kissing a kitten" id="cats" width="280px">
+    <img src="Images/cats/medium/kitten-collar.jpg" alt="A cat with his collar on" id="cats" width="345px">
+    <img src="Images/cats/medium/sherpa.jpg" alt="" id="cats" width="280px">
 
-        In summary, Central Valley Pets Inc. is a place where hope, love, and dreams come together to create lasting family bonds. We believe in the power of adoption to transform lives and are committed to making the process as meaningful and fulfilling as possible for everyone involved. We invite you to join us on this beautiful journey and to learn more about how we can help you start or expand your family through adoption.
+    <p id="adopt">
+        Our Rabbits
+    </p>
+    <img src="Images/rabbits/medium/rabbits.jpg" alt=" A pair of rabbits" id="rabbits" width="500px">
+    <img src="Images/rabbits/large/bunny.jpg" alt=" A bunny looking at the camrea" id="rabbits" width="360px">
+
+    <p id="adopt">
+        Our Turtles
+    </p>
+    <img src="Images/turtles/medium/babyTurtle.jpg" alt="Someone holding a baby turtle" id="turtles" width="300px">
+    <img src="Images/turtles/medium/turtle-sweater.jpg" alt="A turtle in a knited sweater" id="turtles" width="270px">
+    <img src="Images/turtles/medium/turtlePerson.jpg" alt="A turtle looking at a boy" id="turtles" width="360px">
+
+    <p id="adopt">
+        Our Fish
+    </p>
+    <img src="Images/fish/medium/fish-gc3af9aac5_1920.jpg" alt="Yellow fish" id="fish" width="250px">
+    <img src="Images/fish/medium/lion-fish-g6a65fcbdd_1920.jpg" alt=" Lion Fish" id="fish" width="370px">
+    <img src="Images/fish/large/coral-g5416e44c3_1280.jpg" alt="" id="fish" width="370px">
+    
+    <p id="abtpets"> 
+        Adopting a pet from a our shelter brings immeasurable joy, not only to the animal but also to the adopter. When you choose to adopt, you’re giving a loving home to a pet who may have faced uncertainty and hardship. The bond that forms through adoption is truly special, as these pets often show an immense amount of gratitude and affection toward their new family. By choosing adoption, you’re not just adding a pet to your life—you’re making a life-changing difference for an animal in need.
+
+The joy of adoption goes beyond the act itself; it's about the new experiences and companionship that come with bringing a pet into your home. Sheltered animals often have unique personalities that shine through once they feel safe and loved. Whether you’re adopting a playful puppy or a calm, affectionate senior pet, they offer unconditional love and companionship that fills your home with warmth and happiness. Every tail wag, purr, or joyful jump is a reminder of the positive change you've created in their life.
+
+Adopting a pet also teaches responsibility and the rewarding nature of caring for another living being. The routine of feeding, walking, and tending to your pet’s needs not only strengthens your bond but also brings structure and purpose to your day. The sense of accomplishment in knowing you’re providing a safe, nurturing environment for a pet is unmatched. With each small act of care, your connection grows, and you witness firsthand the difference your love and attention make in their well-being.
     </p>
     </main>
     <aside>
@@ -289,11 +347,11 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="whyadopt.html">Why Adopt</a></li>
             <li><a href="ouranimals.html">Our Animals</a></li>
-            <li><a href="#">Reviews</a></li>
+            <li><a href="">Reviews</a></li>
         </ul>
     </aside>
     <footer>
-        <p id="footer">Our Adoption Center is committed to providing children with loving, forever families. We offer a supportive, transparent process for prospective parents, ensuring a seamless adoption journey. With expert guidance, counseling, and resources, we prioritize the well-being of both children and families. Our dedicated team helps navigate all aspects of adoption, from initial inquiries to post-adoption support. We believe in creating lasting, positive impacts by matching children with families who can offer love, stability, and care. At our center, we are here to help you create meaningful connections that transform lives and bring hope to children in need.</p>
+        <p id="footer">These animals are all vital to the balance of nature, each playing an essential role in their ecosystems. By adopting them, you help protect their habitats, support conservation efforts, and ensure their survival for future generations. Your contribution can make a real difference in preserving these incredible creatures.</p>
     </footer>
     <footer id="deatils">
         <h2> &copy Central Valley Pets Inc. </h2>
