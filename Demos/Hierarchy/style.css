@@ -1,0 +1,42 @@
+body
+{
+    color: #333333;
+}
+h1
+{
+    font-family: "Roboto Slab", serif;
+}
+h2
+{
+    font-family: "Roboto Slab", serif;
+}
+p
+{
+    line-height: 1.7;
+    font-family: "Roboto", sans-serif;
+}
+#topnav
+{
+    background-color: cornflowerblue;
+    padding: 1rem;
+}
+#topnav ul
+{
+    background-color: aqua;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap:  1rem;
+    padding: 1rem;
+}
+#topnav a
+{
+    color: black;
+    text-transform: uppercase;
+}
+#topnav a:hover
+{
+    color: red;
+    transition: 0.6s;
+}
