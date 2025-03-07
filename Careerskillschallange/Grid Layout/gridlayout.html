@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid LayOut 3</title>
+    <style>
+        /* mobile design */
+        body
+        {
+            background-color: yellowgreen;
+        }
+                #pageheader
+        {
+            background-color: darkgrey;
+        }
+        #topnav
+        {
+            background-color: salmon;
+        }
+        #container
+        {
+            background-color: darkcyan;
+            max-width: 1200px;
+            width: 90%;
+            padding: 1rem;
+            padding-top: 100px;
+            padding-bottom: 20px;
+            margin: auto;
+        }
+        #wrapper
+        {
+            background-color: darkgreen;
+            max-width: 90%;
+            margin: auto;
+            padding: 1rem;
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(8, 1fr);
+            grid-template-areas: 
+            "med"
+            "midn"
+            "mai"
+            "sec1"
+            "sec2"
+            "sec3"
+            "pagf"
+            "subf"
+            ;
+        }
+        #media
+        {
+            background-color: honeydew;
+            padding: 1rem;
+            grid-area: med;
+            position: relative;
+        }
+        #logo
+        {
+            background-color: goldenrod;
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            border: 4px solid black;
+            position: absolute;
+            top: -30px;
+            left: -30px;
+        }
+        #midnav
+        {
+            background-color:olive;
+            padding: 1rem;
+            grid-area: midn;
+        }
+        #midnav ul
+        {
+            background-color: darkolivegreen;
+        }
+        main
+        {
+            background-color:paleturquoise;
+            padding: 1rem;
+            grid-area: mai;
+        }
+        /* Three Sections */
+        .cards
+        {
+            background-color: violet;
+            padding: 1rem;
+            border: 2px solid black;
+            border-radius: 6px;
+        }
+        #section1
+        {
+            grid-area: sec1;
+        }
+        #section2
+        {
+            grid-area: sec2;
+        }
+        #section3
+        {
+            grid-area: sec3;
+        }
+        #pagefooter
+        {
+            background-color:darkgray;
+            padding: 1rem;
+            grid-area: pagf;
+        }
+        #subfooter
+        {
+            background-color: gray;
+            padding: 1rem;
+            grid-area: subf;
+        }
+
+        /* Desktop design */
+        @media screen and (min-width: 768px)
+        {
+            #wrapper
+            {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: minmax(100px, auto) 1fr minmax(100px, auto) 1fr;
+                gap: 1rem;
+                grid-template-areas:
+                "med med med"
+                "midn mai mai"  
+                "sec1 sec2 sec3"
+                "pagf pagf pagf"
+                "subf subf subf"
+                ;
+
+            }
+        }
+    </style>
+</head>
+<body>
+
+            <header id="pageheader">
+                #pageheader
+                <nav id="topnav">
+                    <ul>
+                        <li>Yahoo</li>
+                        <li>Yahoo</li>
+                        <li>Yahoo</li>
+                        <li>Yahoo</li>
+                    </ul>
+                </nav>
+            </header>
+
+    <div id="container">
+        <div id="wrapper">
+            <div id="media">
+                #media
+                <div id="logo"></div>
+            </div>
+
+            <nav id="midnav">
+                #midnav
+                <ul>
+                    <li>Yahoo</li>
+                    <li>Yahoo</li>
+                    <li>Yahoo</li>
+                    <li>Yahoo</li>
+                </ul>
+            </nav>
+
+            <main>
+                main - layoutthree
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, soluta reprehenderit molestiae autem illo labore nihil velit adipisci quisquam voluptates dicta voluptatem suscipit maiores hic non quibusdam sapiente officiis veritatis blanditiis veniam dolores aliquam. Voluptas, sint laudantium iste nostrum deserunt, ducimus velit similique rem voluptates commodi voluptatum! Ullam, reiciendis hic. Veritatis, dolore sint blanditiis laudantium eveniet mollitia deleniti? Deserunt tenetur inventore autem aliquam, debitis officia culpa corrupti quia explicabo modi delectus, vero quaerat, necessitatibus recusandae vitae! Odit minima, perferendis eius enim provident iure! Omnis impedit, molestias dicta, atque exercitationem explicabo suscipit voluptatibus itaque pariatur ratione expedita esse quod harum. Perferendis iure totam consequatur quisquam quos deserunt corporis delectus tempore, velit doloremque sit ratione ullam, fuga dolorum porro alias saepe odio nisi quis, vitae quod quidem nihil placeat! Assumenda, dicta in. Dolorem perspiciatis omnis a mollitia odit fugit hic assumenda eligendi, in corporis totam quibusdam repellendus unde fuga officiis eius nam minima placeat, recusandae magnam. Officiis ea delectus itaque corporis dolores reiciendis sit dolorum minus totam eius facilis mollitia vitae expedita quas earum aliquid, possimus eaque dignissimos necessitatibus. Ullam voluptas id omnis quasi voluptates consequatur dolor inventore molestias officiis ad sapiente fugiat iste nisi nulla esse tempora, sed odio impedit eius sunt fuga harum? Iure praesentium repellat temporibus a necessitatibus, eligendi impedit exercitationem dolorem animi iusto tenetur ratione illum. Velit in libero repellat obcaecati voluptatem nobis laboriosam reiciendis voluptas non fugiat quis, porro vel dolorum quia, harum, eveniet debitis? Officia, nulla ipsum illo fuga expedita similique praesentium culpa totam eos. Quos quaerat voluptatibus impedit soluta, cumque aut ratione fugiat error accusamus! Molestiae eius reprehenderit rerum id vero? Tempore harum dolores a. Libero exercitationem odio quasi nam perspiciatis reprehenderit deserunt atque accusantium beatae a temporibus distinctio ex, sed error facere amet necessitatibus repellat labore delectus aspernatur! Neque vel eius quasi nihil. Autem ipsa hic odit ipsum animi, quae sapiente delectus. Cumque aliquid molestiae commodi hic! Repellat, deleniti cum dignissimos impedit adipisci aut officia eaque enim similique aspernatur ut nemo, odit illum distinctio animi voluptatibus expedita provident quia dolor harum porro tempora possimus iure sequi! Numquam esse, doloribus accusantium ab aliquid quaerat excepturi in iure illo blanditiis ut corporis id dolorum facere provident officia beatae consectetur quod. Facere, fuga et, deleniti vero suscipit repellat similique veritatis voluptatum dignissimos sit laboriosam! Atque repellendus mollitia pariatur illo quia voluptatem dolorem, excepturi sed ratione laborum placeat nemo in tenetur sint nostrum officia eius sit. Et neque omnis ullam. Modi est sequi, dolor dicta quas voluptatibus nobis beatae, eligendi eos doloribus dolore? Repellat amet nihil molestiae. Minima doloremque tenetur corporis sequi voluptatibus quidem aspernatur facilis sint magni illo tempora mollitia, officia possimus assumenda porro necessitatibus repudiandae enim fugit ut quae. Cupiditate illo asperiores sequi error, explicabo dolorum nulla facilis inventore, dolore molestias provident eius mollitia temporibus expedita illum fugit non ipsum animi ullam iste id ea cum. Dignissimos molestiae quam, debitis vitae voluptas veniam harum consequuntur, alias veritatis officiis magnam ullam nostrum eveniet placeat, aliquam perferendis illo ipsam cupiditate autem delectus inventore numquam dolorum maiores est. Nihil suscipit labore cupiditate libero perspiciatis sunt, earum provident id, quas nam sapiente excepturi? Odio dicta iste repellendus repellat recusandae illum cumque, est nostrum, quod cupiditate nihil. A facere nam culpa harum, et quos ipsam quas qui distinctio eligendi perspiciatis dicta omnis beatae saepe alias architecto natus fugit similique cupiditate nemo pariatur dolor. Magnam vitae, laboriosam molestias, eligendi nobis vel tempore in quod placeat corporis voluptates modi? Sit, accusantium. Deserunt, iusto at! Autem eligendi corrupti molestias odio. Temporibus quidem illo quam doloribus aperiam laborum eos id dolores, reiciendis, maiores porro exercitationem, perspiciatis ipsam doloremque est neque distinctio harum possimus adipisci. Explicabo itaque doloremque necessitatibus sequi! Soluta dolor pariatur delectus quisquam ipsum inventore? Harum nesciunt odit sapiente deleniti minima modi officia, fugit ut! Vel mollitia aut unde, velit sit necessitatibus quam ipsa culpa commodi, officiis inventore hic eveniet odio. Dolores delectus eius sint eaque perferendis expedita eum labore numquam hic tempora, ipsum tenetur placeat iusto illum, adipisci officiis? Debitis exercitationem magni atque enim cumque explicabo optio incidunt saepe quia officiis! Tenetur id esse autem repudiandae ea quod eaque cum culpa, explicabo quisquam voluptate sint illum a quos exercitationem earum impedit tempore quia incidunt necessitatibus, non voluptates. Quibusdam id, accusantium architecto doloribus aspernatur magni neque quis. Nam voluptate enim beatae hic maiores eligendi accusantium quae itaque iste nostrum dolor id nulla, fugiat magni dolorum aspernatur velit temporibus nobis sapiente facilis repellat, ad dolorem molestias! Hic quis ex voluptate exercitationem quas? Cupiditate unde quos incidunt id mollitia deserunt. Rem fugit eos minus deserunt quasi delectus maxime ea tempore dicta consequuntur, aliquam blanditiis unde commodi veniam maiores expedita dolore eligendi quisquam recusandae quidem ullam excepturi aspernatur sunt deleniti. Eaque id quae velit at dignissimos, consectetur dolores eius similique repudiandae quasi ab consequuntur in! Modi repudiandae ratione error, voluptatum vel hic id molestiae? Est necessitatibus ea accusamus voluptatum quas dignissimos dolore modi praesentium assumenda voluptates quidem at quis vero a tempora delectus, porro nulla repellendus dolorem sapiente! Officiis consequatur id culpa magni quasi ea accusamus. Odit veniam optio iure nam quos et voluptatem sit, ex molestias repudiandae. Earum explicabo quasi veritatis natus magni dolores debitis error distinctio sunt nemo. Hic, explicabo est quod, quis soluta facilis at animi eum repellendus saepe culpa? Mollitia voluptatum quod omnis perferendis, quis odit id perspiciatis facere dolorum libero, non placeat sunt nihil dignissimos ratione reiciendis quaerat dolores temporibus. Quia quam amet, cum totam nostrum tempore alias ea facilis debitis laborum nisi quis quo tempora aliquid. Quidem tempora voluptate autem cum excepturi ipsum corrupti nesciunt quos odit animi, qui obcaecati odio debitis ipsam molestias sequi. At, ducimus id illo in iure similique quaerat asperiores dolore necessitatibus tempora atque dolorum quasi quod quidem excepturi neque aspernatur hic fugit. Fugiat autem dolores obcaecati illum voluptatum quae voluptas consequatur, iusto quam repudiandae beatae deleniti tempore recusandae consectetur veritatis esse quisquam, quod aliquam itaque? Vitae ducimus veniam animi nisi fugiat magnam, exercitationem distinctio iusto! Maxime dicta nihil tenetur pariatur velit sunt modi sit ratione! Ab explicabo non, iure veritatis incidunt facere assumenda in doloremque rerum!
+            </main>
+
+            <section id="sectionone" class="cards">
+                #sectionone
+            </section>
+
+            <section id="sectiontwo" class="cards">
+                #sectiontwo
+            </section>
+
+            <section id="sectionthree" class="cards">
+                #sectionthree
+            </section>
+
+            <footer id="pagefooter">
+                #pagefooter
+            </footer>
+
+            <footer id="subfooter">
+                #subfooter
+            </footer>
+
+        </div>
+    </div>
+</body>
+</html>
