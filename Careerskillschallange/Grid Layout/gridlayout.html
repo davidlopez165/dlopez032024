@@ -37,7 +37,7 @@
             display: grid;
             gap: 1rem;
             grid-template-columns: 1fr;
-            grid-template-rows: repeat(8, 1fr);
+            grid-template-rows: repeat(8, minmax(150px, auto)) ;
             grid-template-areas: 
             "med"
             "midn"
@@ -122,7 +122,7 @@
             #wrapper
             {
                 grid-template-columns: 1fr 1fr 1fr;
-                grid-template-rows: minmax(100px, auto) 1fr minmax(100px, auto) 1fr;
+                grid-template-rows: minmax(300px, auto) minmax(500px, auto) minmax(250px, auto) minmax(150px, auto) minmax(150px, auto);
                 gap: 1rem;
                 grid-template-areas:
                 "med med med"
@@ -131,7 +131,11 @@
                 "pagf pagf pagf"
                 "subf subf subf"
                 ;
-
+            }
+            #logo
+            {
+                width: 150px;
+                height: 150px;
             }
         }
     </style>
