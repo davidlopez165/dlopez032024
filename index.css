@@ -1,0 +1,435 @@
+/* Mobile First Design */
+
+
+:root
+{
+    --color-primary: #E9549A;
+    --color-secondary: #37B1E2;
+    --color-tertiary: #3575AB;
+    --font-primary:"Jacquarda Bastarda 9", serif;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--font-primary);
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    background-color: #C2CDCB;
+    max-width: 75rem;
+    min-height: 10rem;
+    border: 5px solid white;
+    margin: auto;
+    padding:1rem 3rem 1rem 3rem;
+    border-radius: 35px;
+    transition: all 0.6s ease;
+}
+#pageheader {
+    background:linear-gradient(45deg, #6CBBDF, #5A87B1, #6CBBDF) ;
+    min-height:200px;
+    padding:1rem;
+    
+}
+
+#bear
+{
+    
+    background-image: url(Images/totodile.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width:150px;
+    height:150px;
+    margin-left: 1735px;
+    margin-top: 25px;
+    /* animation: run 1.9s linear; */
+}
+/* @keyframes run
+{
+    0%{
+        margin-left: -2000px;
+    margin-top: 50px;
+    }
+    50%{
+        margin-left: -1200px;
+    margin-top: 10px;
+    }
+    100%{
+        margin-left: 1700px;
+    margin-top: 25px;
+    }
+} */
+#pagenav {
+    background-color: #99ACCD;
+    min-height:30px;
+    border: 2px solid black;
+    padding:.5rem;
+    text-align: center;
+}
+#pagenav a
+{
+    color: black;;
+    padding: .5rem;
+}
+#pagenav a:hover{
+    color: #fff;
+    transition: 0.3s;
+    text-shadow: 10px 10px 10px black;
+    transition: 0.3s;
+}
+#logo
+{
+    background-color: #013A87;
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    background-image: url(Images/totodilelogo.png);
+    background-size:cover;
+    border:5px solid white;
+    position:absolute;
+    left:calc(50% - 75px);
+    transition: all 2s;
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation: spin 3s infinite linear ;
+    z-index: 1;
+}
+        @keyframes spin
+{
+    100%{
+        transform: rotate(1turn);
+    }
+}
+
+#media
+{
+    background-color: #75C5CE;
+    min-height:350px;
+    padding:1rem;
+    background-image: url(Images/mediatotodile.png);
+    background-size: contain;
+    background-position: center top;
+    transition: none;
+    background-repeat: no-repeat;
+}
+#topnav
+{
+    background:linear-gradient(45deg, #6CBBDF, #5A87B1, #6CBBDF) ;
+    min-height:30px;
+    padding:.5rem;
+    text-align: right;
+}
+#topnav a 
+{   
+    color: black;
+    padding: .5rem;
+}
+#topnav a:hover{
+    color: #fff;
+    transition: 0.3s;
+    text-shadow: 10px 10px 10px black;
+    transition: 0.3s;
+}
+#career
+{
+    background-color: #B3E1F1;
+    min-height:200px;
+    padding:1rem;
+    transition: transform all 0.5s ease-in-out .2s ;
+    
+}
+#career .container:hover
+{
+    box-shadow: 0px 10px 30px 10px cyan;
+    /* transition: all 0.6s; */
+    transform: translateY(-30px) ; 
+    background:linear-gradient(45deg, #1eacbf, #E9549A, #1eacbf) ;
+    color: white;
+    text-shadow: 10px 10px 10px black;
+}
+#career a 
+{
+    color: whitesmoke;
+}
+#career a:hover
+{
+    color: black;
+    transition: 0.3s;
+}
+
+#pagecontent
+{
+    background-color: var(--color-primary);
+    min-height:200px;
+    padding:1rem;
+    transition: transform 0.5s ease 0s ;
+}
+#pagecontent .container:hover
+{
+    box-shadow: 0px 10px 30px 10px cyan;
+    /* transition: 0.6s; */
+    transform: translateY(-30px);
+    background:linear-gradient(45deg, #1eacbf, #E9549A, #1eacbf) ;
+    color: white;
+    text-shadow: 10px 10px 10px black;
+}
+#semester1
+{
+    background-color: var(--color-primary);
+    min-height:200px;
+    padding:1rem;
+    transition: transform 0.5s ease 0s ;
+}
+#semester1 .container:hover
+{
+    box-shadow: 0px 10px 30px 10px cyan;
+    /* transition: 0.6s; */
+    transform: translateY(-30px) ;
+    background:linear-gradient(45deg, #1eacbf, #E9549A, #1eacbf) ;
+    color: white;
+    text-shadow: 10px 10px 10px black;
+}
+#semester1 a 
+{
+    color: whitesmoke;
+}
+#semester1 a:hover
+{
+    color: black;
+    transition:all 0.3s;
+}
+#semester2
+{
+    background-color: var(--color-primary);
+    min-height:200px;
+    padding:1rem;
+    /* display: none; */
+    transition: transform 0.5s ease 0s ;
+}
+#semester2 .container:hover
+{
+    box-shadow: 0px 10px 30px 10px cyan;
+    /* transition: 0.6s; */
+    transform: translateY(-30px) ;
+    background:linear-gradient(45deg, #1eacbf, #E9549A, #1eacbf) ;
+    color: white;
+    text-shadow: 10px 10px 10px black;
+}
+#semester2 a 
+{
+    color: whitesmoke;
+}
+#semester2 a:hover
+{
+    color: black;
+    transition: all 0.3s;
+}
+#keyassignments
+{
+    background-color: rgb(145,204,236);
+    min-height:200px;
+    padding:1rem;
+    
+}
+#keyassignments .container:hover
+{
+    box-shadow: 0px 10px 30px 10px cyan;
+    
+    transform: translateY(-30px) ;
+    background:linear-gradient(45deg, #1eacbf, #E9549A, #1eacbf) ;
+    color: white;
+    text-shadow: 10px 10px 10px black;
+}
+#keyassignments a 
+{
+    color: whitesmoke;
+}
+#keyassignments a:hover
+{
+    color: black;
+    transition: 0.3s;
+}
+#pagefooter
+{
+    background-color: var(--color-secondary);
+    min-height:200px;
+    padding:1rem;
+    text-align: center;
+    transition: transform 0.5s ease 0s ;
+    
+}
+#pagefooter a 
+{   
+    color: whitesmoke;
+}
+#pagefooter a:hover 
+{
+    color: black;
+    transition: 0.3s;
+}
+#pagefooter .container:hover
+{
+    box-shadow: 0px 10px 30px 10px cyan;
+    /* transition: 0.6s; */
+    transform: translateY(-30px);
+    background:linear-gradient(45deg, #1eacbf, #E9549A, #1eacbf) ;
+    color: white;
+    text-shadow: 10px 10px 10px black;
+}
+#subfooter
+{
+    background-color: var(--color-secondary);
+    min-height:200px;
+    padding:1rem;
+    transition: transform 0.5s ease 0s ;
+}
+#subfooter .container:hover
+{
+    box-shadow: 0px 10px 30px 10px cyan;
+    /* transition: 0.6s; */
+    transform: translateY(-30px) ;
+    background:linear-gradient(45deg, #1eacbf, #E9549A, #1eacbf) ;
+    color: white;
+    text-shadow: 10px 10px 10px black;
+}
+#topanchor
+{
+    height: 25px;
+    width: 25px;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: none;
+}
+#footerlinks a 
+{
+    color: whitesmoke;
+}
+#footerlinks{
+    display: none;
+    
+}
+#footerlinks a:hover 
+{
+    color: black;
+    transition: 0.3s;
+}
+#theme
+{
+    background-color: #36B1E2;
+    padding-left: 1rem;
+    padding-bottom: 5px;
+}
+
+/* Table and Desktop Styles */
+/* Use media queries to detect browser window size */
+
+    @media screen and (min-width:321px)
+    {
+        #career{
+            background-color: #6CBBDF;
+        }
+        #bear
+        {
+            /* background-image: url(Images/totodile.gif);
+            background-repeat: no-repeat;
+            background-position: center center;
+            width:150px;
+            height:150px;
+            margin-left: 600px; */
+            margin-top: 25px;
+        }
+    }
+    @media screen and (min-width:480px)
+    {
+        #career{
+            background-color: #6CBBDF;
+        }
+        #bear
+        {
+            /* background-image: url(Images/totodile.gif);
+            background-repeat: no-repeat;
+            background-position: center center;
+            width:150px;
+            height:150px;
+            margin-left: 600px; */
+            margin-top: 25px;
+        }
+    }
+    @media screen and (min-width:768px)
+    {
+        #career{
+            background-color: #6CBBDF;
+        }
+        #footerlinks
+        { display: block;
+        }
+        #flexsubfooter
+        {
+            display: flex;
+            justify-content: space-between;
+        }
+        #bear
+        {
+            background-image: url(Images/totodile.gif);
+            background-repeat: no-repeat;
+            background-position: center center;
+            width:150px;
+            height:150px;
+            margin-left: 600px;
+            margin-top: 25px;
+        }
+    }
+
+        @media screen and (min-width:1024px)
+    {
+        #career{
+            background-color: #6CBBDF;
+        }
+        #logo
+        { 
+            left :25px;
+        }
+        #bear
+        {
+            background-image: url(Images/totodile.gif);
+            background-repeat: no-repeat;
+            background-position: center center;
+            width:150px;
+            height:150px;
+            margin-left: 860px;
+            margin-top: 25px;
+        }
+    }
+
+    @media screen and (min-width:1200px)
+    {
+        #career{
+            background-color: #6CBBDF;
+        }
+        #logo{
+            left :25px; 
+        }
+        #media {
+            height: 600px;
+        }
+        #bear
+    {
+        background-image: url(Images/totodile.gif);
+        background-repeat: no-repeat;
+        background-position: center center;
+        width:150px;
+        height:150px;
+        margin-left: 1735px;
+        margin-top: 25px;
+    }
+
+    }
