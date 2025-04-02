@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial</title>
+    <style>
+        html
+        {
+            scroll-behavior: smooth;
+        }
+        body
+        {
+            background-color: #936841;
+            padding-top: 6rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1, h2, h3
+        {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #container
+        {
+        max-width: 1200px;
+        background-color: cyan;
+        margin: auto;
+        border: 1px solid black;
+        padding: 3rem;
+        }
+        #wrapper
+        {
+            background-color: #60442D;
+            width: 80%;
+            max-width: 1800px;
+            margin: auto;
+            padding: 2rem;
+        }
+        header
+        {
+            background-color: burlywood;
+            max-height: 250px;
+            height: 200px;
+            padding: 1rem;
+            background-image: url(Images/beagleCat.jpg);
+            background-position: center center;
+            background-size: 1000px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 4px solid black;
+            grid-area: hea;
+            color: white;
+            text-align: center;
+            text-shadow: 6px 6px 6px black;
+        }
+        p
+        {
+            font-size: 50px;
+        }
+        p#adopt
+        {
+            font-size: 20px;
+        }
+        p#footer
+        {
+            font-size: 20px;
+        }
+        #logo
+        {
+            background-color: rgb(14, 14, 14);
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-image: url(Images/logo2.jpg);
+            background-size: cover;
+            border: 5px solid black;
+            left: -52px;
+            top: -268px;
+            position: relative;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        nav
+        {
+            background-color: #676457;
+            min-height:30px;
+            padding:.5rem;
+            text-align: center;
+            border: 4px solid black;
+            grid-area: nav;
+
+        }
+        nav ul
+        {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            padding: 0;
+        }
+        nav a{color: black;
+        }
+        nav a:hover{
+            color: #000;
+            transition: 0.3s;
+            text-shadow: 10px 10px 10px black;
+            border: 2px dotted black;
+            transition: .1s;
+        }
+        aside ul
+        {
+            list-style-type: none;
+        }
+        aside li
+        {
+            padding: 1rem;
+        }
+        aside a{color: black;
+        }
+        aside a:hover{
+            color: #000;
+            transition: 0.3s;
+            text-shadow: 10px 10px 10px black;
+            border: 2px dotted black;
+            transition: .1s;
+        }
+        #media
+        {
+            background-color:#C7BCBC;
+            min-height: 140px;
+            padding: 1rem;
+            grid-area: med;
+            border: 4px solid black;
+            align-items: center;
+            display: none;
+        }   
+        main
+        {
+            background-color: #C7BCBC;
+            min-height: 140px;
+            padding: 1rem;
+            grid-area: mai;
+            border: 4px solid black;    
+            color: #333;
+            line-height: 1.7;
+        }
+        aside
+        {
+            background-color: #C7BCBC;
+            min-height: 140px;
+            padding: 1rem;
+            grid-area: asi;
+            border: 4px solid black;
+        }
+        footer
+        {
+            background-color: #C7BCBC;
+            min-height: 140px;
+            padding: 1rem;
+            grid-area: foo;
+            border: 4px solid black;
+            color: #333;
+            line-height: 1.7;
+        }
+        footer#deatils
+        {
+            background-color: #C7BCBC;
+            min-height: 140px;
+            height: 80px;
+            padding: 1rem;
+            grid-area: det;
+            border: 4px solid black;
+            text-align: center;
+            line-height: 1;
+        }
+
+        @media screen and (min-width:768px)
+        {
+            body
+            {
+                background-color: #936841;
+            }
+            #wrapper
+            {
+                background-color: #60442D;
+                display: grid;
+                grid-template-columns: 250px 1fr 1fr;
+                grid-template-areas:
+                "hea hea hea"
+                "nav nav nav"
+                "med med med"
+                "asi mai mai"
+                "foo foo foo"
+                "det det det"
+                ;
+
+            }
+            /* logo for 768px and up */
+        #logo
+        {
+            background-color: rgb(14, 14, 14);
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-image: url(Images/logo2.jpg);
+            background-size: cover;
+            border: 5px solid black;
+            left: -53px;
+            top: -210px;
+            position: relative;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        }
+        video
+        {
+            display: none;
+            width: 65%;
+            margin: auto;
+            border-radius: 35px;
+            border: black 5px solid;
+        }
+        .image1
+        {
+            max-width: 60%;
+            height: auto;
+            float: left;
+            margin: 1rem;
+            box-shadow: 2px 2px 2px 2px black;
+        }
+        .image2
+        {
+            max-width: 60%;
+            height: auto;
+            float: right;
+            margin: 1rem;
+            box-shadow: 2px 2px 2px 2px black;
+        }
+        #about
+        {
+            font-size: 17px;
+            color: #333;
+        }
+        #about a
+        {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="contanier">
+    <div id="wrapper">
+
+    <header>
+        <p>Central Valley Pets Inc.</p>
+        <a href="index.html"><div id="logo"></div></a>
+    </header>
+    <nav>
+        <ul>
+<li>
+                <a href="index.html">Home</a>
+    
+</li>            |
+            <li><a href="whyadopt.html">Why Adopt</a> </li>
+            |
+<li>
+                <a href="ouranimals.html">Our Animals</a>
+    
+</li>            |
+<li>
+                <a href="">Testimonial</a>
+    
+</li>        </ul>
+    </nav>
+    <div id="media">
+        <video src="videos/Pedigree Dog Commercial - Shelter Dog 720.mp4" controls loop autoplay muted></video>
+    </div>
+    <main>
+        <h1>Testimonial</h1>
+    <p id="adopt">
+        Our journey to pet adoption was one of the most rewarding experiences of our lives, and we owe it all to Central Valley Pets Inc. From the moment we visited their website, we felt welcomed, informed, and supported.
+
+Adopting a pet had always been a dream for our family, but we weren’t sure where to start. The process seemed overwhelming—so many options, requirements, and unknowns. Thankfully, Central Valley Pets Inc. made everything simple. Their team was incredibly kind and patient, guiding us through each step, from filling out applications to meeting potential furry companions.
+
+After careful consideration, we were matched with Luna, a sweet rescue dog who immediately stole our hearts. The adoption process was smooth, and the support didn’t end once we brought Luna home. Central Valley Pets Inc. provided helpful resources on pet care, training, and adjusting to life with a rescue animal.
+
+Now, Luna is a beloved member of our family, filling our home with love, laughter, and endless tail wags. We can’t thank Central Valley Pets Inc. enough for making our dream of pet adoption a reality. If you’re considering adopting a pet, don’t hesitate—this organization truly cares about finding the perfect match for both pets and families.
+
+Thank you, Central Valley Pets Inc., 
+    </p>
+    </main>
+    <aside>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="whyadopt.html">Why Adopt</a></li>
+            <li><a href="ouranimals.html">Our Animals</a></li>
+            <li><a href="#">Testimonial</a></li>
+        </ul>
+    </aside>
+    <footer id="deatils">
+        <h2> &copy Central Valley Pets Inc. </h2>
+        <p id="about">555-555-5555</p>
+        <p id="about"> centralvalleypetsinc@shelter.org</p>
+        <p id="about">456 Oak Avenue, Minneapolis, MN 55401.</p>
+    </footer>   
+
+    </div>
+    </div>
+</body>
+</html>
