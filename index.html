@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Lopez - Portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    <link id="styleLink" rel="stylesheet" href="index.css">
 
 </head>
 <body>
@@ -177,6 +177,34 @@
     <div id="topanchor">
         <a href="#top">Top</a>
     </div>
+
+
+
+    <select name="selstylesheet" id="selstylesheet" onchange="updateStyleSheet()">
+        <option value="index.css">Totodile Theme</option>
+        <option value="steve.css">Steve Theme</option>
+        <option value="goku.css">Goku Theme</option>
+        <option value="ginyuforce.css">Ginyu Force Theme</option>
+        <option value="drpepper.css">Dr. Pepper Theme</option>
+        <option value="buu.css">Buu Theme</option>
+
+    </select>
+
+    <script>
+        //Seelect the select control (dropdown list)
+        let selstylesheet;
+        selstylesheet = document.querySelector('#selstylesheet');
+
+        // Select the link to external stylesheet
+        let stylelink;
+        stylelink = document.querySelector('#stylelink');
+        //alert(styleLink);
+
+        function updateStyleSheet() {
+            // alert(selstylesheet.value);
+            styleLink.href = selstylesheet.value;
+        }
+    </script>
 
 </body>
 <script>

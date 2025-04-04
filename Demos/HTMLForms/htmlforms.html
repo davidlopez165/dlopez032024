@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <style>
+        body {
+            background-color: #349489;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+        }
+        #formcontainer
+        {
+            width: 60%;
+            max-width: 600px;
+            min-height: 300px;
+            padding: 1rem;
+            background-color: rgb(54, 53, 53);
+            border: 2px solid goldenrod;
+            margin: auto;
+        }
+        p
+        {
+            background-color: #fff;
+            border: 1px solid black;
+            padding: 1rem;
+            margin: auto;
+            max-width: 500px;
+            min-height: 200px;
+        }
+        fieldset
+        {
+            background-color:rgb(110, 108, 108);
+        }
+        label
+        {
+            color: #fff;
+        }
+        legend
+        {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+
+    <div id="formcontainer">
+<fieldset>
+            <legend>Text Input Element</legend>
+            <label for="textname">Enter Your Name:</label><br>
+            <input type="text" id="textname" placeholder="Enter Your Name">
+            <br>
+                <button id="savetextbtn">Save Text to Local Storage</button>
+                <button id="loadtextbtn">Load Text From Local Storage</button>
+</fieldset>
+
+<fieldset>
+    <legend>Radio Input Element</legend>
+    <input type="radio" id="radhtml" value="html" name="language"> <label for="radhtml">HTML</label>
+    <input type="radio" id="radcss" value="html" name="language"> <label for="radcss">CSS</label>
+    <input type="radio" id="radjava" value="html" name="language"> <label for="radjava">JavaScript</label>
+    <br>
+    <button id="savetextbtn">Save Radio to Local Storage</button>
+    <button id="loadtextbtn">Load Radio From Local Storage</button>
+</fieldset>
+
+<fieldset>
+    <legend>Select Element</legend>
+    <select name="themeselector" id="themeselector">
+    <option value="redtheme"> Red Theme</option>
+    <option value="greentheme"> Green Theme</option>
+    <option value="bluetheme"> Blue Theme</option>
+</select>
+<br>
+    <button id="saveselectbtn">Save Select to Local Storage</button>
+    <button id="loadselectbtn">Load Select From Local Storage</button>
+</fieldset>
+
+<p name="paragraphoutput" id="paragraphoutput"></p>
+
+    </div>
+</body>
+</html>
