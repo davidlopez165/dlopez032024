@@ -34,15 +34,49 @@
         fieldset
         {
             background-color:rgb(110, 108, 108);
-        }
-        label
-        {
-            color: #fff;
+            padding: 1rem;
+            margin: 1rem;
+            border:2px solid goldenrod;
         }
         legend
         {
+        font-family: Arial, Helvetica, sans-serif;
             color: white;
         }
+        label
+        {
+            padding: .25rem;
+            color: #fff;
+        }
+        input[type="text"]
+        {
+            background-color: white;
+            border: 2px solid goldenrod;
+        }
+        input[type="text"]::placeholder
+        {
+            color: gray;
+            font-style: italic;
+        }
+        button
+        {
+            padding: 1rem;
+            background-color: black;
+            color: white;
+            margin-bottom: .5rem;
+            margin-top: .5rem;
+        }
+        input[name="language"]
+        {
+            outline: 2px solid goldenrod;
+            outline-style: dashed;
+        }
+        input[name="language"]:checked
+        {
+            accent-color: crimson;
+            outline-color: crimson;
+        }
+
     </style>
 </head>
 <body>

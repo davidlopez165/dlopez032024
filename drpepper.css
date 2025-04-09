@@ -35,7 +35,7 @@
             background:linear-gradient(45deg, #711F25, #711F25, #711F25) ;
             min-height:200px;
             padding:1rem;
-            
+            padding-top: 5rem;
         }
         #bear
         {
@@ -114,7 +114,8 @@
         }
         #topnav
         {
-            background:linear-gradient(45deg, #711F25, #711F25, #711F25) ;
+            background:transparent ;
+            position: absolute;
             min-height:30px;
             padding:.5rem;
             text-align: right;
@@ -200,7 +201,6 @@
             background-color: var(--color-primary);
             min-height:200px;
             padding:1rem;
-            display: none;
             transition: transform 0.5s ease 0s ;
         }
         #semester2 .container:hover

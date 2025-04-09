@@ -58,7 +58,7 @@ iframe
     background:linear-gradient(45deg, #6CBBDF, #5A87B1, #6CBBDF) ;
     min-height:200px;
     padding:1rem;
-    
+    padding-top: 5rem;
 }
 
 #bear
@@ -143,7 +143,8 @@ iframe
 }
 #topnav
 {
-    background:linear-gradient(45deg, #6CBBDF, #5A87B1, #6CBBDF) ;
+    background:transparent;
+    position: absolute;
     min-height:30px;
     padding:.5rem;
     text-align: right;

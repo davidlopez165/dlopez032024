@@ -29,12 +29,13 @@
             margin: auto;
             padding:1rem 3rem 1rem 3rem;
             border-radius: 35px;
+            transition: all 0.6s ease;
         }
         #pageheader {
             background:linear-gradient(45deg, #0071F9, #BD2C32, #0071F9) ;
             min-height:200px;
             padding:1rem;
-            
+            padding-top: 5rem;
         }
         #bear
         {
@@ -59,6 +60,7 @@
         }
         #pagenav a:hover{
             color: #fff;
+            text-shadow: 10px 10px 10px #000;
             transition: 0.3s;
         }
         #logo
@@ -97,7 +99,8 @@
         }
         #topnav
 {
-    background:linear-gradient(45deg, #0071F9, #BD2C32, #0071F9) ;
+    background:transparent ;
+    position: absolute;
     min-height:30px;
     padding:.5rem;
     text-align: right;
@@ -125,6 +128,7 @@
             box-shadow: 0px 10px 30px 10px #fff;
             transition: all 0.6s;
             transform: translateY(-30px) skew(-6deg);
+            text-shadow: 10px 10px 10px black;
         }
         #career a 
         {
@@ -148,6 +152,7 @@
             box-shadow: 0px 10px 30px 10px #fff;
             transition: 0.6s;
             transform: translateY(-30px) skew(-6deg);
+            text-shadow: 10px 10px 10px black;
         }
         #semester1
         {
@@ -161,6 +166,7 @@
             box-shadow: 0px 10px 30px 10px #fff;
             transition: 0.6s;
             transform: translateY(-30px) skew(-6deg);
+            text-shadow: 10px 10px 10px black;
         }
         #semester1 a 
         {
@@ -176,7 +182,6 @@
             background-color: var(--color-primary);
             min-height:200px;
             padding:1rem;
-            display: none;
             transition: transform 0.5s ease 0s ;
         }
         #semester2 .container:hover
@@ -184,6 +189,16 @@
             box-shadow: 0px 10px 30px 10px #fff;
             transition: 0.6s;
             transform: translateY(-30px) skew(-6deg);
+            text-shadow: 10px 10px 10px black;
+        }
+        #semester2 a 
+        {
+            color: black;
+        }
+        #semester2 a:hover
+        {
+            color: white;
+            transition: all 0.3s;
         }
         #keyassignments
         {
@@ -196,6 +211,7 @@
             box-shadow: 0px 10px 30px 10px #fff;
             transition: 0.6s;
             transform: translateY(-30px) skew(-6deg);
+            text-shadow: 10px 10px 10px black;
         }
         #keyassignments a 
         {
@@ -229,6 +245,7 @@
             box-shadow: 0px 10px 30px 10px #fff;
             transition: 0.6s;
             transform: translateY(-30px) skew(-6deg);
+            text-shadow: 10px 10px 10px black;
         }
         #subfooter
         {
@@ -242,6 +259,7 @@
             box-shadow: 0px 10px 30px 10px #fff;
             transition: 0.6s;
             transform: translateY(-30px) skew(-6deg);
+            text-shadow: 10px 10px 10px black;
         }
         #topanchor
         {
