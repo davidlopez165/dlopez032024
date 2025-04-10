@@ -167,7 +167,7 @@
         {
             box-shadow: 0px 10px 30px 10px white;
             /* transition: all 0.6s; */
-            transform: translateY(-30px) skew(-6deg);
+            transform: translateY(-30px) ;
             color: white;
             text-shadow: 10px 10px 10px black;
         }
@@ -192,7 +192,7 @@
         {
             box-shadow: 0px 10px 30px 10px white;
             /* transition: 0.6s; */
-            transform: translateY(-30px) skew(-6deg);
+            transform: translateY(-30px) ;
             color: white;
             text-shadow: 10px 10px 10px black;
         }
@@ -207,7 +207,7 @@
         {
             box-shadow: 0px 10px 30px 10px white;
             /* transition: 0.6s; */
-            transform: translateY(-30px) skew(-6deg);
+            transform: translateY(-30px) ;
             color: white;
             text-shadow: 10px 10px 10px black;
         }
@@ -231,7 +231,7 @@
         {
             box-shadow: 0px 10px 30px 10px white;
             /* transition: 0.6s; */
-            transform: translateY(-30px) skew(-6deg);
+            transform: translateY(-30px) ;
             color: white;
             text-shadow: 10px 10px 10px black;
         }
@@ -255,7 +255,7 @@
         {
             box-shadow: 0px 10px 30px 10px white;
             
-            transform: translateY(-30px) skew(-6deg);
+            transform: translateY(-30px) ;
             color: white;
             text-shadow: 10px 10px 10px black;
         }
@@ -290,7 +290,7 @@
         {
             box-shadow: 0px 10px 30px 10px white;
             /* transition: 0.6s; */
-            transform: translateY(-30px) skew(-6deg);
+            transform: translateY(-30px) ;
             color: white;
             text-shadow: 10px 10px 10px black;
         }
@@ -305,7 +305,7 @@
         {
             box-shadow: 0px 10px 30px 10px white;
             /* transition: 0.6s; */
-            transform: translateY(-30px) skew(-6deg);
+            transform: translateY(-30px) ;
             color: white;
             text-shadow: 10px 10px 10px black;
         }

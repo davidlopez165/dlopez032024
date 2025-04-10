@@ -166,7 +166,7 @@
         {
             box-shadow: 0px 10px 30px 10px #fff;
             transition: all 0.6s;
-            transform: translateY(-30px) skew(-6deg);
+            transform: translateY(-30px) ;
             text-shadow: 10px 10px 10px black;
         }
         #career a 
@@ -190,7 +190,7 @@
         {
             box-shadow: 0px 10px 30px 10px #fff;
             /* transition: 0.6s; */
-            transform: translateY(-30px) skew(-6deg);
+            transform: translateY(-30px) ;
             text-shadow: 10px 10px 10px black;
         }
         #semester1
@@ -204,7 +204,7 @@
         {
             box-shadow: 0px 10px 30px 10px #fff;
             /* transition: 0.6s; */
-            transform: translateY(-30px) skew(-6deg);
+            transform: translateY(-30px) ;
             text-shadow: 10px 10px 10px black;
         }
         #semester1 a 
@@ -227,7 +227,7 @@
         {
             box-shadow: 0px 10px 30px 10px #fff;
             /* transition: 0.6s; */
-            transform: translateY(-30px) skew(-6deg);
+            transform: translateY(-30px) ;
             text-shadow: 10px 10px 10px black;
         }
         #semester2 a 
@@ -249,7 +249,7 @@
         {
             box-shadow: 0px 10px 30px 10px #fff;
             /* transition: 0.6s; */
-            transform: translateY(-30px) skew(-6deg);
+            transform: translateY(-30px) ;
             text-shadow: 10px 10px 10px black;
         }
         #keyassignments a 
@@ -283,7 +283,7 @@
         {
             box-shadow: 0px 10px 30px 10px #fff;
             transition: 0.6s;
-            transform: translateY(-30px) skew(-6deg);
+            transform: translateY(-30px) ;
             text-shadow: 10px 10px 10px black;
         }
         #subfooter
@@ -297,7 +297,7 @@
         {
             box-shadow: 0px 10px 30px 10px #fff;
             transition: 0.6s;
-            transform: translateY(-30px) skew(-6deg);
+            transform: translateY(-30px) ;
             text-shadow: 10px 10px 10px black;
         }
         #topanchor

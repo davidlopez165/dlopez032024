@@ -165,7 +165,7 @@ background: transparent;
 {
     box-shadow: 0px 10px 30px 10px white;
     /* transition: all 0.6s; */
-    transform: translateY(-30px) skew(-6deg);
+    transform: translateY(-30px);
     background-image: url(Images/sky.jpeg);
     background-size:contain;
     text-shadow: 10px 10px 10px black;
@@ -191,7 +191,7 @@ background: transparent;
 {
     box-shadow: 0px 10px 30px 10px white;
     /* transition: 0.6s; */
-    transform: translateY(-30px) skew(-6deg);
+    transform: translateY(-30px) ;
     background-image: url(Images/sky.jpeg);
     background-size:contain;
     text-shadow: 10px 10px 10px black;
@@ -207,7 +207,7 @@ background: transparent;
 {
     box-shadow: 0px 10px 30px 10px white;
     /* transition: 0.6s; */
-    transform: translateY(-30px) skew(-6deg);
+    transform: translateY(-30px) ;
     background-image: url(Images/sky.jpeg);
     background-size:contain;
     text-shadow: 10px 10px 10px black;
@@ -232,7 +232,7 @@ background: transparent;
 {
     box-shadow: 0px 10px 30px 10px white;
     /* transition: 0.6s; */
-    transform: translateY(-30px) skew(-6deg);
+    transform: translateY(-30px) ;
     background-image: url(Images/sky.jpeg);
     background-size:contain;
     text-shadow: 10px 10px 10px black;
@@ -256,7 +256,7 @@ background: transparent;
 {
     box-shadow: 0px 10px 30px 10px white;
     /* transition: 0.6s; */
-    transform: translateY(-30px) skew(-6deg);
+    transform: translateY(-30px) ;
     background-image: url(Images/sky.jpeg);
     background-size:contain;
     text-shadow: 10px 10px 10px black;
@@ -292,7 +292,7 @@ background: transparent;
 {
     box-shadow: 0px 10px 30px 10px white;
     /* transition: 0.6s; */
-    transform: translateY(-30px) skew(-6deg);
+    transform: translateY(-30px) ;
     background-image: url(Images/sky.jpeg);
     background-size:contain;
     text-shadow: 10px 10px 10px black;
@@ -308,7 +308,7 @@ background: transparent;
 {
     box-shadow: 0px 10px 30px 10px white;
     /* transition: 0.6s; */
-    transform: translateY(-30px) skew(-6deg);
+    transform: translateY(-30px) ;
     background-image: url(Images/sky.jpeg);
     background-size:contain;
     text-shadow: 10px 10px 10px black;
