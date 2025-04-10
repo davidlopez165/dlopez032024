@@ -191,20 +191,35 @@
     </select>
 
     <script>
-        //Seelect the select control (dropdown list)
+        //Select the select control (dropdown list)
         let selstylesheet;
         selstylesheet = document.querySelector('#selstylesheet');
 
         // Select the link to external stylesheet
-        let stylelink;
-        stylelink = document.querySelector('#stylelink');
-        //alert(styleLink);
+        let styleLink;
+        styleLink = document.querySelector('#styleLink');
 
+        // Function to update stylesheet
         function updateStyleSheet() {
-            // alert(selstylesheet.value);
-            styleLink.href = selstylesheet.value;
+            const selectedTheme = selstylesheet.value;
+            styleLink.href = selectedTheme;
+            // Save the selected theme to localStorage
+            localStorage.setItem('selectedTheme', selectedTheme);
         }
+
+        // Load saved theme when page loads
+        window.addEventListener('load', function() {
+            const savedTheme = localStorage.getItem('selectedTheme');
+            if (savedTheme) {
+                selstylesheet.value = savedTheme;
+                styleLink.href = savedTheme;
+            }
+        });
+
+        // Add event listener for theme changes
+        selstylesheet.addEventListener('change', updateStyleSheet);
     </script>
+
 
 </body>
 <script>
