@@ -39,7 +39,27 @@
         function updateStyleSheet() {
             // alert(selstylesheet.value);
             styleLink.href = selstylesheet.value;
+
+            // Save to local storage
+            localStorage.setItem('selectedStylesheet3210', selstylesheet.value);
         }
+
+        window.addEventListener('load', function()
+        {
+            let savedStylesheet = localStorage.getItem('selectedStylesheet3210');
+            
+            //alert(savedStylesheet);
+
+            if(savedStylesheet !== null)
+            {
+                styleLink.href = savedStylesheet;
+
+                // Match the dropdown box
+                selstylesheet.value = savedStylesheet;
+            }
+        });
+
+
     </script>
 
 </body>
