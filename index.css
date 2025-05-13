@@ -9,6 +9,23 @@
     --font-primary:"Jacquarda Bastarda 9", serif;
 }
 
+/* Reset Browser */
+
+/* *, *::before, *::after
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+
+/* Fix Browser bounce */
+body
+{
+    overflow-x: auto;
+    width: 100%;
+    overscroll-behavior: none;
+}
+
 html
 {
     scroll-behavior: smooth;
@@ -54,6 +71,7 @@ iframe
     border-radius: 35px;
     transition: all 0.6s ease;
 }
+
 #pageheader {
     background:linear-gradient(45deg, #6CBBDF, #5A87B1, #6CBBDF) ;
     min-height:200px;
