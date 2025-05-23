@@ -1,0 +1,20 @@
+body {
+    background-color: crimson;
+}
+
+#quote {
+    min-height: 100px;
+    background-color: white;
+    margin: 1rem;
+}
+
+#mainimage {
+    border: 5px solid white;
+    display: block;
+    margin: auto;
+}
+
+h1
+{
+    color: red;
+}
