@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <h1>Switch - Letter Grades</h1>
+
+
+    <script>
+        // Roll Dice
+        let rollResult;
+        rollResult = Math.floor(Math.random()*6) + 1;
+        console.log(rollResult)
+
+        // Switch Statement
+        //Switch: Take a single value and gives a choice
+        switch(rollResult)
+        {
+            case 1:
+                console.log("You rolled a 1");
+                break;
+
+            case 2:
+                console.log("You rolled a 2");
+                break;
+
+            case 3:
+                console.log("You rolled a 3");
+                break;
+
+            case 4:
+                console.log("You rolled a 4");
+                break;
+
+            case 5:
+                console.log("You rolled a 5");
+                break;
+                
+            case 6:
+                console.log("You rolled a 6");
+                break;
+
+                default:
+                    console.log("You roll is not a 1 or 2.");
+        }
+
+        // Letter Grade Generator 
+        let gradePercentageHistory;
+        let gradePercentageEnglish;
+        let gradePercentagePE;
+
+        gradePercentageHistory = Math.floor(Math.random()*100) + 1;
+        gradePercentageEnglish = Math.floor(Math.random()*100) + 1;
+        gradePercentagePE = Math.floor(Math.random()*100) + 1;
+
+        console.log(`History Percentage: ${gradePercentageHistory} `);
+        console.log(`English Percentage: ${gradePercentageEnglish} `);
+        console.log(`PE Percentage: ${gradePercentagePE} `);
+
+        //If statement solution for letter grades
+        if(gradePercentageHistory >= 90)
+        {
+            console.log("History Grade: A");
+        }
+        
+
+        else if(gradePercentageHistory >= 80)
+        {
+            console.log("History Grade: B");
+        }
+
+        else if(gradePercentageHistory >= 70)
+        {
+            console.log("History Grade: C");
+        }
+
+        else if(gradePercentageHistory >= 60)
+        {
+            console.log("History Grade: D");
+        }
+
+        else
+        {
+            console.log("History Grade: F");
+        }
+
+        // Calculate english grade
+        switch(true)
+        {
+            case gradePercentageEnglish >= 90:
+                console.log("You got an A in English");
+                break;
+
+                case gradePercentageEnglish >= 80:
+                console.log("You got an B in English");
+                break;
+
+                case gradePercentageEnglish >= 70:
+                console.log("You got an C in English");
+                break;
+
+                case gradePercentageEnglish >= 60:
+                console.log("You got an D in English");
+                break;
+
+                case gradePercentageEnglish <= 50:
+                console.log("You got an F in English");
+                break;
+        }
+    </script>
+</body>
+</html>
